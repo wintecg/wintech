@@ -1,0 +1,115 @@
+
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+footer{
+    box-shadow: #020741;
+    height: fit-content;
+    width: 99%;
+    background-color: rgb(19, 2, 52);
+    color: #fff;
+    display: flex;
+    align-items: space-between;
+    font-size: 30px;
+  }
+  img{
+    width: 20rem;
+    height: inherit;
+  }
+
+header {
+    background-color: #1801317a;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    width: 98%;
+    position: fixed;
+}
+img{
+    width: 10rem;
+    height: inherit;
+    margin: 0;
+    pad: 0;
+}
+marquee{
+    font-size: 40px;
+    text-align: center;
+    color: gold;
+}
+
+
+.main {
+    padding: 20px;
+
+}
+a{
+
+    color: gold;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 5px solid #1404ac;
+    padding: 10px;
+    text-align: center;
+    background-color: #3a8ddf71;
+    transition: 2s;
+}
+.product:hover{
+    background-color: rgba(255, 0, 0, 0.326);
+}
+.product img {
+    max-width: 100%;
+    height: 12rem;
+width: 15rem;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.product button:hover{
+    background-color: blue;
+}
+.cart {
+    background-color: #3a8cdf;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: fixed;
+}
+form{
+    align-items: end;
+    margin-left: 37%;
+}
+button{
+    margin-top: 3rem;
+    margin-left: 48;
+    font-size: 30px;
+    height: 4rem;
+    width: 18rem;
+    background-color: blue;
+    color: white;
+    text-decoration: double;
+    transition: 1s;
+}
+button:hover{
+    background-color: green;
+}

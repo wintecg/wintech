@@ -1,0 +1,102 @@
+
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5b6bc6;
+}
+
+marquee{
+    font-size: 50px;
+    color: gold;
+}
+*{
+    text-align: center;
+}
+img{
+    width: 10rem;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #090123;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    height: 8.5rem;
+}
+
+nav{
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: -ms-page;
+    margin: 5rem 3rem 5rem 3rem;
+    margin-top: 5rem;
+    font-size: 30px;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+.h2 {
+    margin-bottom: 1rem;
+}
+
+.instrument-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.instrument {
+    text-align: center;
+    margin: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#recording {
+    text-align: center;
+}
+
+#audio-visualizer {
+    width: 100%;
+    height: 100px;
+
+    background-color: #ddd;
+    margin-top: 1rem;
+}
+
+#recorded-audio {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.mixer-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mixer-controls label, .mixer-controls input {
+    margin-bottom: 0.5rem;
+
+    width: 80%;
+}

@@ -1,0 +1,103 @@
+body{
+   
+    padding: 0%;
+    background: scroll;
+    border: 20px 10px 20px 10px solid yellowgreen;
+    background-color: darkgray;
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    font-size: 50px;
+    color: rgb(255, 193, 37);
+    transition: 5s;
+}
+.shop-header:hover{
+    background-color: rgb(0, 0, 75);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+button{
+    background-color: blue;
+    
+}
+button:hover{
+    background-color: rgb(126, 108, 4);
+}
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 1rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-menu ul li button:hover{
+    color: green;
+}
+.nav-menu ul li a:hover {
+    color: #ff6347; /* A nice highlight color */
+}
+img{
+    width: 5rem;
+    height: inherit;
+}
+.container{
+    background-color: rgba(0, 255, 255, 0.13);
+    color: goldenrod;
+    border: 10px solid red;
+    border-radius: 20%;
+    font-size: 40px;
+    text-align: center;
+    transition: 5s;
+}
+.container:hover{
+    background-color: goldenrod;
+}
+fieldset{
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+    border: 10px solid rgb(207, 6, 6);
+
+    margin: 0%;
+    color: gold;
+border-style: groove;
+}
+button{
+    background-color: rgb(48, 3, 37);
+    color: antiquewhite;
+    font-size: 30PX;
+}
+.contact{
+    border: 15px rgb(246, 244, 244);
+    border-style: dotted;
+}
+section{
+    background-color: rgb(3, 56, 7);
+    margin-top: 3rem;
+    width: fit-content;
+    margin-left: 18%;
+    border-style: double;
+    border: 10px solid rgb(6, 6, 6);
+    transition: 5s;
+}
+section:hover{
+    background-color: goldenrod;
+}

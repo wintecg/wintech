@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+*{
+    text-align: center;
+}
+h1{
+    color: gold;
+    font-size: 40px;
+}
+h2{
+    color: blue;
+    font-size: 35px;
+}

@@ -1,0 +1,107 @@
+body{
+    margin: 2%;
+    width: auto;
+    text-align: center;
+    text-align: center;
+}
+a{
+    color: #fff;
+}body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.shop-header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 35px;
+    transition: 10s;
+}
+.shop-header:hover{
+    background-color: rgb(2, 80, 13);
+
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-menu ul {
+    list-style-type:none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 1rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff6347; /* A nice highlight color */
+}
+
+h1{
+    color: red;
+}
+h2{
+    color: yellowgreen;
+}
+nav{
+    width: 20rem;
+    text-align: center;
+}
+marquee{
+    font-size: 50px;
+    color: goldenrod;
+    text-align: center;
+}
+details{
+    
+    color: rgb(7, 1, 40);
+    font-size: 30px;
+} 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+}
+
+img{
+  width: 7rem;
+  height: inherit;
+}
+footer{
+  box-shadow: #020741;
+  height: 10rem;
+  width: 99%;
+  background-color: rgb(19, 2, 52);
+  color: #fff;
+  display: flex;
+  align-items: space-between;
+  font-size: 30px;
+}
+img{
+  margin: 0;
+  width: 10rem;
+  height: inherit;
+}

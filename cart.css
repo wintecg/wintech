@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eca4a462;
+    font-size: 30px;
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070029;
+    padding: 1rem 2rem;
+    color: white;
+    transition: 5s;
+}
+.shop-header:hover{
+    background-color: rgb(71, 74, 0);
+    color: red;
+}
+section ul li{
+    display:flow-root;
+    list-style-type:circle;
+}
+button{
+    color: aliceblue;
+    background-color: green;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 10rem;
+    transition: 1s;
+    height: 2rem;
+    margin: 5px;
+}
+button:hover{
+    background-color: blue;
+    color: green;
+}
+a{
+    color: aliceblue;
+    font-size: 30px;
+    transition: 1s;
+}
+a:hover{
+    color: gold;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-menu ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display:ruby;
+    color: aliceblue;
+    transition: 3s;
+}
+.nav-menu ul:hover{
+    color: red;
+}
+
+.nav-menu ul li {
+    margin: 0 1rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: rgb(255, 0, 0); /* A nice highlight color */
+}
+*{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    color: goldenrod;
+    text-decoration: underline;
+}
+img{
+    width: 8rem;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+
+}

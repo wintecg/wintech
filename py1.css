@@ -1,0 +1,82 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: rgba(0, 128, 0, 0.293);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 1rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff6347; /* A nice highlight color */
+}
+
+form{
+    background-color: rgb(2, 2, 45);
+    color: aliceblue;
+    display: block;
+    position:static;
+    width: 40rem;
+    height: inherit;
+    font-size: 40px;
+    margin-left: 18%;
+    border: 10px solid red;
+    border-style: double;
+    border-radius:30% ;
+    border-bottom-right-radius:45% ;
+    border-bottom-left-radius: 45%;
+    transition: 20s;
+}
+.lable{
+    margin: 2rem;
+}
+form:hover{
+    background-color: goldenrod;
+}
+h1{
+    font-size: 50px;
+    color: gold;
+}
+button{
+   background-color: blue;
+    height: 2.5rem;
+    transition: 2s;
+    font-size: 18px;
+}
+button:hover{
+    background-color: green;
+}
