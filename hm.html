@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    video {
+      position: absolute;
+    width: 100%;
+    height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Send the video to the background */
+    }
+
+    .content {
+      position: relative;
+      color: white;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: Arial, sans-serif;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }  
+        header{
+background: none;
+background: blue;
+color:white;
+align-items:center;
+display:flex;
+justify-content: space-between;
+        }
+.cointainer{
+align-items:center;
+    justify-content:space-between;
+
+}
+nav ul li{list-style:none;display:inline;margin-right:20px;
+margin: 5px;
+font-size: 30px;
+color: greenyellow;
+}
+h2{
+    text-align: center;
+    color: red;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    text-decoration: double;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 1%;
+}
+
+fieldset{
+    text-align: center;
+    font-size: 50px;
+    color: greenyellow;
+    width: fit-content;
+}
+input{
+    margin: 1%;
+    background-color: aquamarine;
+    font-size: 30px;
+    color: red;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background-color: #fff;
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6a11cb;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a0ea1;
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+.signin-link a {
+  color: #6a11cb;
+  text-decoration: none;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <header>
+<div class="cointainer">
+    <hr>
+<h1 class="logo">WINTER TECHNOLOGIES</h1>
+<h2>
+ <i><b> better for best</b></i>
+ <hr>
+</h2>
+</div>
+
+<marquee behavior="alt" direction="lef"><h1 style="color: goldenrod; font-size: 70px;">WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME </h1></marquee>
+
+
+</header>
+<video autoplay loop muted playsinline>
+    <source src="v1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="content">
+    <h1>Welcome</h1>
+    <h2>towinter technologies</h2>
+  </div>
+  <body>
+    <div class="signup-container">
+      <form class="signup-form" action="log in.html">
+        <h2>Create an Account</h2>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+        <p class="signin-link">Already have an account? <a href="log in.html">Sign In</a></p>
+      </form>
+    </div>
+  </body>
+  </html>

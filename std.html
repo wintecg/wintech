@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Music Studio</title>
+    <link rel="stylesheet" href="std.css">
+</head>
+<body>
+    <header>
+        <img src="music.png" alt="">
+        <marquee behavior="alt" direction="up">WELCOME TO WINTECH STUDIOS <br> BETTER TOOLS ON THE WAY</marquee>
+        <nav>
+            <a href="#instruments">Instruments</a><br>
+
+            <a href="#recording">Recording</a><br>
+            <a href="#mixing">Mixing</a><br>
+            <a href="#about">About</a><br>
+        </nav>
+    </header>
+
+    <section id="instruments">
+        <h2>Virtual Instruments</h2>
+        <div class="instrument-container">
+            <div class="instrument">
+                <h3>Piano</h3>
+                <button class="play-piano">Play</button>
+            </div>
+            <div class="instrument">
+                <h3>Guitar</h3>
+
+                <button class="play-guitar">Play</button>
+            </div>
+            <div class="instrument">
+                <h3>Drums</h3>
+                <button class="play-drums">Play</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="recording">
+        <h2>Recording Studio</h2>
+        <button id="start-recording">Start Recording</button>
+        <button id="stop-recording" disabled>Stop Recording</button>
+        <div id="audio-visualizer"></div>
+
+        <audio id="recorded-audio" controls></audio>
+    </section>
+
+    <section id="mixing">
+        <h2>Mixing Console</h2>
+        <div class="mixer-controls">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+
+            <label for="pan">Pan:</label>
+            <input type="range" id="pan" min="-1" max="1" step="0.01" value="0">
+
+            <label for="reverb">Reverb:</label>
+            <input type="range" id="reverb" min="0" max="1" step="0.01" value="0">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to our online music studio! We provide virtual instruments, recording, and mixing tools for musicians of all levels.</p>
+    </section>
+
+    <script src="std.js"></script>
+</body>
+
+</html>

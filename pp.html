@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Payment Page</title>
+    <link rel="stylesheet" href="peyment.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #11004756;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #4a4906;
+            border-bottom-right-radius:42%;
+            border-bottom-left-radius: 42%;
+            border-bottom-style: dotted 10px white;
+            width: fit-content;
+            height: fit-content;
+            transition: 10s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.298);
+        }
+        .container:hover{
+            background-color: rgb(112, 2, 2);
+        }
+        h1 {
+            text-align: center;
+            color:gold;
+            font-size: 40px;
+        }
+        h2{
+            color: blue;
+            font-size: 35px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #e0ffe0;
+            text-align: center;
+            font-size: 25px;
+        }
+        input, select {
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: gold;
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: 5s;
+        }
+        input, select:hover{
+            background-color: green;
+        }
+        .submit-btn {
+            background-color: #030571;
+            color: white;
+            border: 5px solid red;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 35%;
+            font-size: 20px;
+        }
+        .summary {
+            width: 40%;
+            background-color: #026c02;
+            padding: 10px;
+            margin-top: 15px;
+            margin-left: 30%;
+            border: 1px solid #8BC34A;
+            border-radius: 5px;
+            display: none;
+            transition: 3s;
+        }
+        .summary:hover{
+            background-color: blue;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.shop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+    color: white;
+    transition: 5s;
+}
+.shop-header:hover{
+    background-color: rgb(3, 3, 242);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+button{
+    background-color: blue;
+    
+}
+button:hover{
+    background-color: gold;
+}
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 1rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-menu ul li button:hover{
+    color: green;
+}
+.nav-menu ul li a:hover {
+    color: #ff6347; /* A nice highlight color */
+}
+
+    </style>
+</head>
+<body>
+    <header><div class="shop-header">
+        <div class="logo">
+            <h1>WINTECH INTERNATIONAL</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><button><a href="services.html">Home</a></li>
+                <li><button><a href="shop.html">Products</a></button></li>
+                <li><button><a href="contact.html">Contact</a></button></li>
+                <li><button><a href="cart.html">Cart</a></button></li>
+            </ul>
+        </nav>
+        </header>
+    <div class="container">
+        <h1>WINTER TECHNOLOGIES</h1>
+        <H2>how do you wish to pay for your products</H2>
+        <form id="paymentForm">
+            <label for="paymentType">Select Payment Method:</label>
+            <select id="paymentType" name="paymentType">
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="mpesa">M-Pesa</option>
+            </select>
+
+            <div id="creditCardForm">
+                <label for="cardNumber">Credit Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your credit card number">
+                <small id="cardError" class="error"></small>
+            </div>
+
+            <div id="paypalForm">
+                <label>PayPal:</label>
+                <a href="https://www.paypal.com" target="_blank">Click here to pay via PayPal</a>
+            </div>
+
+            <div id="mpesaForm">
+                <label for="mpesaNumber">M-Pesa Phone Number:</label>
+                <input type="text" id="mpesaNumber" name="mpesaNumber" placeholder="Enter your M-Pesa number">
+                <small id="mpesaError" class="error"></small>
+            </div>
+            <div class="location" id="adress">
+                <label for="adrees"> where can we deliver yor package?</label>
+                <input type="adress" placeholder="nairobi, dandora f1" required="">
+            </div>
+            <div class="summary" id="paymentSummary">
+                <h3>Payment Summary</h3>
+                <p id="summaryDetails"></p>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="validateAndSubmit()">Submit Payment</button>
+        </form>
+    </div>
+
+    <script>
+        const paymentType = document.getElementById("paymentType");
+        const creditCardForm = document.getElementById("creditCardForm");
+        const paypalForm = document.getElementById("paypalForm");
+        const mpesaForm = document.getElementById("mpesaForm");
+        const cardError = document.getElementById("cardError");
+        const mpesaError = document.getElementById("mpesaError");
+        const paymentSummary = document.getElementById("paymentSummary");
+        const summaryDetails = document.getElementById("summaryDetails");
+
+        function togglePaymentForms() {
+            creditCardForm.style.display = "none";
+            paypalForm.style.display = "none";
+            mpesaForm.style.display = "none";
+            cardError.innerText = "";
+            mpesaError.innerText = "";
+
+            const selectedPayment = paymentType.value;
+            if (selectedPayment === "creditCard") {
+                creditCardForm.style.display = "block";
+            } else if (selectedPayment === "paypal") {
+                paypalForm.style.display = "block";
+            } else if (selectedPayment === "mpesa") {
+                mpesaForm.style.display = "block";
+            }
+        }
+
+        function validateAndSubmit() {
+            const selectedPayment = paymentType.value;
+            let isValid = true;
+
+            // Validate Credit Card
+            if (selectedPayment === "creditCard") {
+                const cardNumber = document.getElementById("cardNumber").value;
+                if (cardNumber.length < 16 || !/^\d+$/.test(cardNumber)) {
+                    cardError.innerText = "Please enter a valid 16-digit credit card number.";
+                    isValid = false;
+                }
+            }
+
+            // Validate M-Pesa
+            if (selectedPayment === "mpesa") {
+                const mpesaNumber = document.getElementById("mpesaNumber").value;
+                if (mpesaNumber.length !== 10 || !/^\d+$/.test(mpesaNumber)) {
+                    mpesaError.innerText = "Please enter a valid 10-digit M-Pesa number.";
+                    isValid = false;
+                }
+            }
+
+            if (isValid) {
+                const summaryText = `Payment Method: ${selectedPayment}`;
+                paymentSummary.style.display = "block";
+                summaryDetails.innerText = summaryText;
+                alert("Payment information submitted successfully!");
+            }
+        }
+
+        paymentType.addEventListener("change", togglePaymentForms);
+        togglePaymentForms(); // Initialize the form visibility
+    </script>
+</body>
+</html>
